@@ -1,3 +1,7 @@
+%It checks whether the signal can be sent to the desired distance. If it is sent, it finds the minimum transmit power.
+%hm:Mobile antenna height
+%hb:Base antenna height
+%freq: Carrier freq(in MHz)
 function [Tx_power,control]=FindMinTx_Power(SF,BW,cable_length,freq,antenna_gain,hm,hb,d)
 Max_EIRP=16;
 switch SF
